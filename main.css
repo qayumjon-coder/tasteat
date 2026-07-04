@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap");
+
+:root {
+    --bg: #292e36;
+    --accent: #e1b168;
+
+    --bg-transparent: #292e3695;
+    --white-transparent: #ffffff1a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+#current {
+    color: var(--accent);
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+    max-width: 1440px;
+    padding-top: 0.1px;
+}
+
+header {
+    width: 100%;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg);
+    justify-content: space-between;
+}
+
+.header_top_wrap {
+    width: 100%;
+    display: flex;
+    height: 188px;
+    margin: 50px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_top_wrap .call_button {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 18px 55px;
+    transition: 0.3s ease;
+    text-decoration: none;
+    margin: 10px 10px 10px 0;
+    border: var(--accent) solid 2px;
+}
+
+.header_top_wrap .call_button:hover {
+    color: var(--bg);
+    background-color: var(--accent);
+}
+
+.header_top_wrap .reservation_button {
+    font-size: 22px;
+    color: var(--bg);
+    font-weight: 500;
+    padding: 18px 55px;
+    transition: 0.3s ease;
+    text-decoration: none;
+    margin: 10px 0 10px 10px;
+    background-color: var(--accent);
+    border: var(--accent) solid 2px;
+}
+
+.header_top_wrap .reservation_button:hover {
+    color: var(--accent);
+    background: transparent;
+}
+
+/* Navbar */
+header nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #5c6168;
+    border-bottom: 1px solid #5c6168;
+}
+
+header nav .nav_content {
+    display: flex;
+    padding: 5px 0;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .nav_content ul {
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+header nav .nav_content ul li a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 30px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav .nav_content ul li:first-child a {
+    padding-left: 0;
+}
+
+header nav .nav_content ul li a:hover {
+    color: var(--accent);
+}
+
+header nav .icons {
+    display: flex;
+    align-items: center;
+}
+
+header nav .icons a {
+    color: #fff;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* Hero section */
+.hero {
+    background: var(--bg);
+}
+
+.hero_content {
+    display: flex;
+    padding-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero_data {
+    width: 50%;
+}
+
+.hero_data .titleandparagraf h1{
+    display: block;
+    color: #fff;
+    margin: 10px 0;
+    font-size: 100px;
+    font-family: "Cormorant infant", sans-serif;
+}
+
+.hero_data .titleandparagraf p{
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 0 10px;
+    padding: 5px 0 30px;
+}
+
+.hero_data a{
+    display: block;
+    width: max-content;
+    font-size: 22px;
+    padding: 18px 55px;
+    color: var(--accent);
+    text-decoration: none;
+    border: 2px solid var(--accent);
+}
+
+.hero_image {
+    width: 50%;
+    position: relative;
+    bottom: -4px;
+}
+
+.hero_image .hro_image {
+    z-index: 2;
+    width: 100%;
+    position: relative;
+    border-radius: 626px 626px 0 0;
+    border: 30px solid var(--white-transparent);
+    border-bottom: none;
+}
+
+.hero_image .wheel_pattern {
+    top: 0;
+    z-index: 1;
+    right: -100px;
+    position: absolute;
+    animation: rotation 10s linear infinite;
+}
+
+/* Details section */
+details{
+    width: 100%;
+}
+
+.details_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Animations */
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
