@@ -124,12 +124,12 @@ header nav .nav_content ul li a:hover {
     color: var(--accent);
 }
 
-header nav .icons {
+header nav .icons_lang {
     display: flex;
     align-items: center;
 }
 
-header nav .icons a {
+header nav .icons_lang a {
     color: #fff;
     padding: 0 10px;
     font-size: 20px;
@@ -180,7 +180,7 @@ header nav .icons a {
 }
 
 .hero_image {
-    width: 50%;
+    width: 670px;
     position: relative;
     bottom: -4px;
 }
@@ -203,14 +203,106 @@ header nav .icons a {
 }
 
 /* Details section */
-details{
+.details{
     width: 100%;
+    padding: 100px 0 60px;
+    background-color: #fff8f5   ;
 }
 
 .details_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.detail .img_cover{
+    width: 83px;
+    height: 83px;
+    display: flex;
+    color: #fff;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #292E36;
+}
+
+.detail .det_wrapper{
+    color: #292E36;
+}
+
+.detail .det_wrapper h2{
+    font-size: 30px;
+    margin-bottom: 5px;
+    font-family: "Cormorant infant", sans-serif;
+}
+
+.detail .det_wrapper p{
+    color: #555;
+    font-size: 20px;
+}
+
+.detail .det_wrapper a{
+    color: #555;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Story section */
+.story{
+    background-color: #fff8f5;
+}
+
+.story_content{
+    display: grid;
+    padding: 40px 0 100px;
+    grid-column-gap: 45px;
+    grid-template-rows: auto;
+    grid-template-columns: 1.3fr 1fr;
+}
+
+.story_content .image_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.story_content .story_data{
+    display: flex;
+    color: #292E36;
+    flex-direction: column;
+}
+
+.story_content .story_data h3{
+    font-size: 40px;
+    margin:  20px 0 20px;
+    letter-spacing: 1.5px;
+    font-family: "Cormorant Infant", sans-serif;
+}
+
+.story_content .story_data p{
+    color: #555;    
+    font-size: 20px;
+    margin: 0px 0 10px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+.story_content .story_data .story_dates{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+}
+
+.story_content .story_data .sign_wrap{
+    margin: 15px 0 50px;
+}
+
+.story_content .story_data .sign_wrap .sign{
+    margin-top: 10px;
 }
 
 /* Animations */

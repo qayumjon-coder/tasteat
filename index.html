@@ -1,128 +1,199 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TastEat</title>
-    <link rel="stylesheet" href="main.css" />
-    <script
-      src="https://kit.fontawesome.com/bf8b8f599c.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="shortcut icon"
-      href="images/favicon/restaurantate-favicon.png"
-      type="image/x-icon"
-    />
-    <link
-      href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="header_top_wrap">
-          <a class="call_button" href="tel:123456789">Call - 123 456 789</a>
-          <img
-            src="./images/brand/6246d7f2c2b5677de6d04e5f_tasteat-brand-logo.svg"
-            alt="brand-logo"
-            class="brand_logo"
-          />
-          <a class="reservation_button" href="#">Reservation</a>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TastEat</title>
+  <link rel="stylesheet" href="main.css" />
+  <script src="https://kit.fontawesome.com/bf8b8f599c.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="images/favicon/restaurantate-favicon.png" type="image/x-icon" />
+  <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header_top_wrap">
+        <a class="call_button" href="tel:123456789" data-i18n="nav.call">Call - 123 456 789</a>
+        <img src="./images/brand/6246d7f2c2b5677de6d04e5f_tasteat-brand-logo.svg" alt="brand-logo" class="brand_logo" />
+        <a data-i18n="nav.reservation" class="reservation_button" href="#">Reservation</a>
       </div>
+    </div>
 
-      <nav>
-        <div class="container">
-          <div class="nav_content">
-            <ul>
-              <li><a href="#" id="current">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Our Menu</a></li>
-              <li><a href="#">Pages</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
+    <nav>
+      <div class="container">
+        <div class="nav_content">
+          <ul>
+            <li><a data-i18n="nav.home" href="#" id="current">Home</a></li>
+            <li><a data-i18n="nav.aboutUs" href="#">About Us</a></li>
+            <li><a data-i18n="nav.ourMenu" href="#">Our Menu</a></li>
+            <li><a data-i18n="nav.pages" href="#">Pages</a></li>
+            <li><a data-i18n="nav.blog" href="#">Blog</a></li>
+            <li><a data-i18n="nav.contactUs" href="#">Contact Us</a></li>
+          </ul>
 
-            <div class="icons">
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          <div class="icons_lang">
+            <div class="lang_btn">
+              <div class="lang_btns">
+                <button class="btn-lang english" data-lang="en">
+                  English
+                </button>
+                <button class="btn-lang uzbek" data-lang="uz">
+                  Uzbek
+                </button>
+                <button class="btn-lang russian" data-lang="ru">
+                  Russian
+                </button>
+              </div>
+              <i class="fa-solid fa-caret-down"></i>
             </div>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Hero section -->
-    <section class="hero">
-      <div class="container">
-        <div class="hero_content">
-          <div class="hero_data">
-            <div class="titleandparagraf">
-              <h1>Welcome to Restaurant</h1>
-              <p>
-                The people, food and the prime locations make the perfect place
-                good friends & family to come together and have great time.
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero_content">
+        <div class="hero_data">
+          <div class="titleandparagraf">
+            <h1 data-i18n="hero.title">Welcome to Restaurant</h1>
+            <p data-i18n="hero.description">
+              The people, food and the prime locations make the perfect place
+              good friends & family to come together and have great time.
+            </p>
+          </div>
+
+          <a href="#" data-i18n="hero.button">View Menu</a>
+        </div>
+
+        <div class="hero_image">
+          <img class="hro_image" src="./images/6229b247d132ea71a84093db_hero-image.jpg" alt="hero_image" />
+          <img class="wheel_pattern" src="./images/6229b4f953997e7786e1bec8_hero-wheel-pattern.svg"
+            alt="wheel-pattern" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Details section -->
+  <section class="details">
+    <div class="container">
+      <div class="details_content">
+        <div class="detail">
+          <div class="img_cover">
+            <img src="./images/icon-img/Vector.svg" />
+          </div>
+
+          <span class="det_wrapper">
+            <h2 data-i18n="details.locateUs.title">Locate Us</h2>
+            <p data-i18n="details.locateUs.text">Riverside 25, San Diego, California</p>
+          </span>
+        </div>
+
+        <div class="detail">
+          <div class="img_cover">
+            <img src="./images/icon-img/IMAGE.svg" />
+          </div>
+
+          <span class="det_wrapper">
+            <h2 data-i18n="details.openHours.title">Open Hours</h2>
+            <p data-i18n="details.openHours.text">Mon To Fri 9:00 AM - 9:00 PM</p>
+          </span>
+        </div>
+
+        <div class="detail">
+          <div class="img_cover">
+            <img src="./images/icon-img/Vector (1).svg" />
+          </div>
+
+          <span class="det_wrapper">
+            <h2 data-i18n="details.reservation.title">Reservation</h2>
+            <a href="mailto:restaurantate@gmail.com" data-i18n="details.reservation.email">restaurantate@gmail.com</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story section -->
+  <section class="story">
+    <div class="container">
+      <div class="story_content">
+        <div class="image_content">
+          <img class="story_image" src="/images/IMAGE (8).png" alt="story-image" />
+        </div>
+
+        <div class="story_data">
+          <h3 data-i18n="aboutStory.title">The Delicious Story</h3>
+
+          <p data-i18n="aboutStory.description">
+            The people, food and the prime locations make the perfect place
+            for the friends & family to come together and have great time.
+          </p>
+
+          <div class="story_dates">
+            <div class="story_1">
+              <h3>2018</h3>
+              <p data-i18n="aboutStory.year2018">
+                Plan for this restaurant to deliver healthy food.
               </p>
             </div>
-
-            <a href="#">View Menu</a>
+            <div class="story_2">
+              <h3>2022</h3>
+              <p data-i18n="aboutStory.year2022">
+                Happily in the fourth year by fulfill the motto.
+              </p>
+            </div>
           </div>
-
-          <div class="hero_image">
-            <img
-              class="hro_image"
-              src="./images/6229b247d132ea71a84093db_hero-image.jpg"
-              alt="hero_image"
-            />
-            <img
-              class="wheel_pattern"
-              src="./images/6229b4f953997e7786e1bec8_hero-wheel-pattern.svg"
-              alt="wheel-pattern"
-            />
+          <div class="sign_wrap">
+            <p data-i18n="aboutStory.signature">JOSEFINE</p>
+            <img class="sign" src="/images/sign/Vector.png" alt="sign_image" />
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="details">
-      <div class="container">
-        <div class="details_content">
-          <div class="detail">
-            <i class="material-symbols-rounded"> location_on</i>
-
-            <span class="det_wrapper">
-              <h3>Heading</h3>
-              <p>Paragraph</p>
-            </span>
+  <!-- Menu section -->
+  <div class="menu_section">
+    <div class="container">
+      <div class="menu_content">
+        <div class="menu_data">
+          <p data-i18n="menuSection.label">Menu</p>
+          <div class="menu_title_wrap">
+            <h3 data-i18n="menuSection.title">Try Our Special dishes</h3>
+            <p data-i18n="menuSection.description">
+              Every time you perfectly dine with us, it should happy for great
+              inspired food in an environment designed with individual touches
+              unique to the local area.
+            </p>
           </div>
 
-          <div class="detail">
-            <i class="material-symbols-rounded"> av_timer</i>
+          <img src="./images/6229c6da3c9fc2c572c73749_home-menu-image.jpg" alt="" class="menu_item_image">
+          <a href="#" data-i18n="menuSection.seeAll">See all dishes</a>
+        </div>
 
-            <span class="det_wrapper">
-              <h3>Heading</h3>
-              <p>Paragraph</p>
-            </span>
-          </div>
-
-          <div class="detail">
-            <i class="material-symbols-rounded"> contract_edit</i>
-
-            <span class="det_wrapper">
-              <h3>Heading</h3>
-              <p>Paragraph</p>
-            </span>
-          </div>
+        <div class="menu">
+          <div class="starters"></div>
+          <div class="mains"></div>
+          <div class="desserts"></div>
         </div>
       </div>
-    </section>
-  </body>
+    </div>
+  </div>
+
+  <script src="./lang.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+
 </html>
