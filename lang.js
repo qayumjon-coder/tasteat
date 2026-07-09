@@ -3,14 +3,14 @@ const siteContent = {
     nav: {
       home: "Bosh sahifa",
       aboutUs: "Biz haqimizda",
-      ourMenu: "Bizning menyu",
+      ourMenu: "Menyumiz",
       bookATable: "Stol band qilish",
       ourChefs: "Bizning oshpazlar",
       gallery: "Galereya",
       faq: "Ko'p so'raladigan savollar",
       pages: "Sahifalar",
       blog: "Blog",
-      contactUs: "Biz bilan bog'lanish",
+      contactUs: "Bog'lanish",
       reservation: "Bron qilish",
       call: "Chaqiruv - 123 456 789"
     },
@@ -51,18 +51,18 @@ const siteContent = {
         dessert: "Desert"
       },
       items: [
-        {category: "starters", name: "Erkidagi xom morskoy grebeshok", description: "Grebeshokni ustritsalar uchun ishlatiladigan usulda tozalang", price: "$40" },
-        {category: "starters", name: "Bahor ruleti", description: "Issiq tovaga yog' qo'shing, oq piyoz bilan", price: "$20" },
-        {category: "starters", name: "Frantsuz piyoz shorva", description: "Bug'doy uni, olma sirkasi, non", price: "$25" },
-        {category: "starters", name: "Pomidorli bruskketta", description: "Non, zaytun moyi, sarimsoq, qora murch", price: "$30" },
+        {image: "images/menu/Starters/6229c84a72e00315336144d5_menu-item-image-1.jpg", category: "starters", name: "Erkidagi xom morskoy grebeshok", description: "Grebeshokni ustritsalar uchun ishlatiladigan usulda tozalang", price: "$40" },
+        {image: "images/menu/Starters/6229d373d7d3fa5f722bdd40_menu-item-image-2.jpg", category: "starters", name: "Bahor ruleti", description: "Issiq tovaga yog' qo'shing, oq piyoz bilan", price: "$20" },
+        {image: "images/menu/Starters/6229d3823596cc4d67f4acc5_menu-item-image-3.jpg", category: "starters", name: "Frantsuz piyoz shorva", description: "Bug'doy uni, olma sirkasi, non", price: "$25" },
+        {image: "images/menu/Starters/6229d38b50dde73126097b56_menu-item-image-4.jpg", category: "starters", name: "Pomidorli bruskketta", description: "Non, zaytun moyi, sarimsoq, qora murch", price: "$30" },
         
-        {category: "mains", name: "Ukrop sousli grilyangan losos", description: "Jigarrang shakar, losos filesi, Dijon gorchitsasi", price: "$40" },
-        {category: "mains", name: "Sabzavotli qovurilgan mol go'shti", description: "Loviya, entrekot, zaytun moyi, mol go'shti", price: "$20" },
-        {category: "mains", name: "Marrakesh vegetarian karri", description: "Shirin kartoshka, baqlajon, no'xat", price: "$25" },
-        {category: "mains", name: "Achchiq vegan kartoshka karri", description: "Kokos suti, loviya, kartoshka, karri kukuni", price: "$35" },
+        {image: "images/menu/MainDish/6229d396199c0032870b33e8_menu-item-image-5.jpg", category: "mains", name: "Ukrop sousli grilyangan losos", description: "Jigarrang shakar, losos filesi, Dijon gorchitsasi", price: "$40" },
+        {image: "images/menu/MainDish/6229d39f50cee31a1d4046b4_menu-item-image-6.jpg", category: "mains", name: "Sabzavotli qovurilgan mol go'shti", description: "Loviya, entrekot, zaytun moyi, mol go'shti", price: "$20" },
+        {image: "images/menu/MainDish/6229d3a950dde70c18097cc0_menu-item-image-7.jpg", category: "mains", name: "Marrakesh vegetarian karri", description: "Shirin kartoshka, baqlajon, no'xat", price: "$25" },
+        {image: "images/menu/MainDish/6229d3b450cee3aea6404866_menu-item-image-8.jpg", category: "mains", name: "Achchiq vegan kartoshka karri", description: "Kokos suti, loviya, kartoshka, karri kukuni", price: "$35" },
         
-        {category: "desserts", name: "Kremli olma pirogi", description: "Qaymoq krem, tuxum oqi, dolchin", price: "$15" },
-        {category: "desserts", name: "Limonli meringue pirogi", description: "Muzlatilgan pirog xamiri, meringue, limon", price: "$30" }
+        {image: "images/menu/Desserts/IMAGE (18).png", category: "desserts", name: "Kremli olma pirogi", description: "Qaymoq krem, tuxum oqi, dolchin", price: "$15" },
+        {image: "images/menu/Desserts/IMAGE (19).png", category: "desserts", name: "Limonli meringue pirogi", description: "Muzlatilgan pirog xamiri, meringue, limon", price: "$30" }
       ]
     },
     testimonials: {
@@ -224,16 +224,18 @@ const siteContent = {
         dessert: "Десерт"
       },
       items: [
-        { name: "Сырые морские гребешки из Эрки", description: "Очистите гребешок так же, как это делают для устриц", price: "$40" },
-        { name: "Спринг-роллы", description: "Добавьте масло на горячую сковороду с белой частью зеленого лука", price: "$20" },
-        { name: "Французский луковый суп", description: "Пшеничная мука, яблочный уксус, хлеб", price: "$25" },
-        { name: "Томатная брускетта", description: "Хлеб, оливковое масло, чеснок, черный перец", price: "$30" },
-        { name: "Лосось на гриле с укропным соусом", description: "Коричневый сахар, филе лосося, дижонская горчица", price: "$40" },
-        { name: "Ростбиф с овощами", description: "Стручковая фасоль, рибай, оливковое масло, говядина", price: "$20" },
-        { name: "Марракешское вегетарианское карри", description: "Сладкий картофель, баклажан, нут", price: "$25" },
-        { name: "Острое веганское картофельное карри", description: "Кокосовое молоко, фасоль, картофель, порошок карри", price: "$35" },
-        { name: "Яблочный пирог со сливками", description: "Взбитые сливки, яичный белок, корица", price: "$15" },
-        { name: "Лимонный пирог с меренгой", description: "Замороженная основа для пирога, меренга, лимон", price: "$30" }
+        {image: "images/menu/Starters/6229c84a72e00315336144d5_menu-item-image-1.jpg", category: "starters", name: "Сырые морские гребешки из Эрки", description: "Очистите гребешок так же, как это делают для устриц", price: "$40" },
+        {image: "images/menu/Starters/6229d373d7d3fa5f722bdd40_menu-item-image-2.jpg", category: "starters", name: "Спринг-роллы", description: "Добавьте масло на горячую сковороду с белой частью зеленого лука", price: "$20" },
+        {image: "images/menu/Starters/6229d3823596cc4d67f4acc5_menu-item-image-3.jpg", category: "starters", name: "Французский луковый суп", description: "Пшеничная мука, яблочный уксус, хлеб", price: "$25" },
+        {image: "images/menu/Starters/6229d38b50dde73126097b56_menu-item-image-4.jpg", category: "starters", name: "Томатная брускетта", description: "Хлеб, оливковое масло, чеснок, черный перец", price: "$30" },
+        
+        {image: "images/menu/MainDish/6229d396199c0032870b33e8_menu-item-image-5.jpg", category: "mains", name: "Лосось на гриле с укропным соусом", description: "Коричневый сахар, филе лосося, дижонская горчица", price: "$40" },
+        {image: "images/menu/MainDish/6229d39f50cee31a1d4046b4_menu-item-image-6.jpg", category: "mains", name: "Ростбиф с овощами", description: "Стручковая фасоль, рибай, оливковое масло, говядина", price: "$20" },
+        {image: "images/menu/MainDish/6229d3a950dde70c18097cc0_menu-item-image-7.jpg", category: "mains", name: "Марракешское вегетарианское карри", description: "Сладкий картофель, баклажан, нут", price: "$25" },
+        {image: "images/menu/MainDish/6229d3b450cee3aea6404866_menu-item-image-8.jpg", category: "mains", name: "Острое веганское картофельное карри", description: "Кокосовое молоко, фасоль, картофель, порошок карри", price: "$35" },
+        
+        {image: "images/menu/Desserts/IMAGE (18).png", category: "desserts", name: "Яблочный пирог со сливками", description: "Взбитые сливки, яичный белок, корица", price: "$15" },
+        {image: "images/menu/Desserts/IMAGE (19).png", category: "desserts", name: "Лимонный пирог с меренгой", description: "Замороженная основа для пирога, меренга, лимон", price: "$30" }
       ]
     },
     testimonials: {
@@ -386,7 +388,7 @@ const siteContent = {
     },
     menuSection: {
       label: "Menu",
-      title: "Try Our Special dishes",
+      title: "Try Our Special Dishes",
       description: "Every time you perfectly dine with us, it should happy for great inspired food in an environment designed with individual touches unique to the local area.",
       seeAll: "See all dishes",
       categories: {
@@ -395,16 +397,18 @@ const siteContent = {
         dessert: "Dessert"
       },
       items: [
-        { name: "Raw Scallops from Erquy", description: "Shuck the scallop to that used for oysters", price: "$40" },
-        { name: "Spring Roll", description: "Add oil to a hot pan spring onion whites", price: "$20" },
-        { name: "French Onion Soup", description: "Wheat flour, apple cider vinegar, bread", price: "$25" },
-        { name: "Tomato Bruschetta", description: "Bread, olive oil, garlic, black pepper", price: "$30" },
-        { name: "Grilled Salmon with Dill Sauce", description: "Brown sugar, salmon fillet, Dijon mustard", price: "$40" },
-        { name: "Roast Beef with Vegetable", description: "Green beans, rib eye, olive oil, beef", price: "$20" },
-        { name: "Marrkesh Vegetetarian Curruy", description: "Sweet potato, eggplant, garbanzo bean", price: "$25" },
-        { name: "Spicy Vegan Potato Curry", description: "Coconut milk, beans, potatoes, curry powder", price: "$35" },
-        { name: "Apple Pie with Cream", description: "Whipping cream, egg white, cinnamon", price: "$15" },
-        { name: "Lemon Meringue Pie", description: "Frozen pie crust, meringue, lemon", price: "$30" }
+        {image: "images/menu/Starters/6229c84a72e00315336144d5_menu-item-image-1.jpg", category: "starters", name: "Raw Scallops from Erquy", description: "Shuck the scallop to that used for oysters", price: "$40" },
+        {image: "images/menu/Starters/6229d373d7d3fa5f722bdd40_menu-item-image-2.jpg", category: "starters", name: "Spring Roll", description: "Add oil to a hot pan spring onion whites", price: "$20" },
+        {image: "images/menu/Starters/6229d3823596cc4d67f4acc5_menu-item-image-3.jpg", category: "starters", name: "French Onion Soup", description: "Wheat flour, apple cider vinegar, bread", price: "$25" },
+        {image: "images/menu/Starters/6229d38b50dde73126097b56_menu-item-image-4.jpg", category: "starters", name: "Tomato Bruschetta", description: "Bread, olive oil, garlic, black pepper", price: "$30" },
+        
+        {image: "images/menu/MainDish/6229d396199c0032870b33e8_menu-item-image-5.jpg", category: "mains", name: "Grilled Salmon with Dill Sauce", description: "Brown sugar, salmon fillet, Dijon mustard", price: "$40" },
+        {image: "images/menu/MainDish/6229d39f50cee31a1d4046b4_menu-item-image-6.jpg", category: "mains", name: "Roast Beef with Vegetable", description: "Green beans, rib eye, olive oil, beef", price: "$20" },
+        {image: "images/menu/MainDish/6229d3a950dde70c18097cc0_menu-item-image-7.jpg", category: "mains", name: "Marrkesh Vegetetarian Curruy", description: "Sweet potato, eggplant, garbanzo bean", price: "$25" },
+        {image: "images/menu/MainDish/6229d3b450cee3aea6404866_menu-item-image-8.jpg", category: "mains", name: "Spicy Vegan Potato Curry", description: "Coconut milk, beans, potatoes, curry powder", price: "$35" },
+        
+        {image: "images/menu/Desserts/IMAGE (18).png", category: "desserts", name: "Apple Pie with Cream", description: "Whipping cream, egg white, cinnamon", price: "$15" },
+        {image: "images/menu/Desserts/IMAGE (19).png", category: "desserts", name: "Lemon Meringue Pie", description: "Frozen pie crust, meringue, lemon", price: "$30" }
       ]
     },
     testimonials: {
@@ -515,7 +519,7 @@ const siteContent = {
   }
 };
 
-// Foydalanish uchun eksport
+// Eksport qilish
 if (typeof module !== "undefined" && module.exports) {
   module.exports = siteContent;
 }
