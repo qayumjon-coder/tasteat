@@ -95,10 +95,10 @@ const siteContent = {
     offers: {
       label: "Takliflar",
       title: "Bizning maxsus takliflarimiz",
-      description: "Oshpazlarimiz og'zingizda erib ketadigan taomlar tayyorlashadi, hatto eng talabchan ovqatlanuvchilarni ham qoniqtiradi — hozir bu taomlar chegirmada.",
+      description: "Oshpazlarimiz og'zingizda erib ketadigan taomlar tayyorlashadi, hatto eng talabchan ovqatlanuvchilarni ham <br> qoniqtiradi — hozir bu taomlar chegirmada.",
       items: [
-        { badge: "50% chegirma", name: "Tovuqli burger", description: "Mazali qo'shimchalar va ko'katlar bilan tovuqli burger.", price: "$10" },
-        { badge: "50% chegirma", name: "Tovuqli pitsa", description: "Turli xil ta'mlar aralashtirilgan pitsa.", price: "$9" }
+        { badge: "50% chegirma", name: "Tovuqli burger", description: "Mazali qo'shimchalar va ko'katlar bilan tovuqli burger.", price: "$10", only:"Faqat" },
+        { badge: "50% chegirma", name: "Tovuqli pitsa", description: "Turli xil ta'mlar aralashtirilgan pitsa.", price: "$9", only:"Faqat" }
       ]
     },
     popularDishes: {
@@ -268,10 +268,10 @@ const siteContent = {
     offers: {
       label: "Акции",
       title: "Наши блюда со скидкой",
-      description: "Наши повара создают тающие во рту блюда, которые удовлетворят даже самых привередливых едоков — сейчас эти блюда участвуют в акции.",
+      description: "Наши повара создают тающие во рту блюда, которые удовлетворят даже самых привередливых едоков — сейчас <br> эти блюда участвуют в акции.",
       items: [
-        { badge: "Скидка 50%", name: "Куриный бургер", description: "Куриный бургер с вкусными добавками и зеленью.", price: "$10" },
-        { badge: "Скидка 50%", name: "Куриная пицца", description: "Пицца с разнообразными вкусами, смешанными вместе.", price: "$9" }
+        { badge: "Скидка 50%", name: "Куриный бургер", description: "Куриный бургер с вкусными добавками и зеленью.", price: "$10", only:"Только" },
+        { badge: "Скидка 50%", name: "Куриная пицца", description: "Пицца с разнообразными вкусами, смешанными вместе.", price: "$9", only:"Только" }
       ]
     },
     popularDishes: {
@@ -441,10 +441,10 @@ const siteContent = {
     offers: {
       label: "offers",
       title: "Our Offer dishes",
-      description: "Our chefs create melt-in-your-mouth dishes that'll satiate even the fussiest eaters now the dishes are in offers use it based on hunger.",
+      description: "Our chefs create melt-in-your-mouth dishes that'll satiate even the fussiest eaters now <br> the dishes are in offers use it based on hunger.",
       items: [
-        { badge: "50% Offer Going", name: "Chicken Burger", description: "Chicken burger with the tasty toppings and leaves.", price: "$10" },
-        { badge: "50% Offer Going", name: "Chicken Pizza", description: "Pizza with multiple flavor and the toping are mixed.", price: "$9" }
+        { badge: "50% Offer Going", name: "Chicken Burger", description: "Chicken burger with the tasty toppings and leaves.", price: "$10", only:"Only" },
+        { badge: "50% Offer Going", name: "Chicken Pizza", description: "Pizza with multiple flavor and the toping are mixed.", price: "$9", only:"Only" }
       ]
     },
     popularDishes: {

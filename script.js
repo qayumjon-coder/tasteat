@@ -43,7 +43,7 @@ function updatePageText() {
 
         path.forEach(p => value = value[p]);
 
-        element.textContent = value;
+        element.innerHTML = value;
     });
 }
 
