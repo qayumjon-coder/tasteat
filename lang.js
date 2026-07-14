@@ -104,7 +104,7 @@ const siteContent = {
     popularDishes: {
       label: "Menyu",
       title: "Mashhur taomlar",
-      description: "Restoranda ofitsiantlar orasida kim ovqatni har bir stolga tezroq yetkazib beradi degan o'yin bor. Bu Ginnes rekordiga urinishga olib keldi.",
+      description: "Restoranda ofitsiantlar orasida kim ovqatni har bir stolga tezroq yetkazib beradi <br> degan o'yin bor. Bu Ginnes rekordiga urinishga olib keldi.",
       seeAll: "Barcha taomlarni ko'rish",
       items: [
         { name: "Tovuq Manjuri", price: "$15", description: "Ziyofatlarda barcha yosh guruhlari tomonidan yoqtiriladigan boshlang'ich taom." },
@@ -277,7 +277,7 @@ const siteContent = {
     popularDishes: {
       label: "Меню",
       title: "Популярные блюда",
-      description: "В ресторане между официантами существует игра, кто быстрее всех обслужит каждый столик. Это привело к попытке установить рекорд Гиннесса.",
+      description: "В ресторане между официантами существует игра, кто быстрее всех обслужит каждый <br> столик. Это привело к попытке установить рекорд Гиннесса.",
       seeAll: "Смотреть все блюда",
       items: [
         { name: "Курица Манджури", price: "$15", description: "Блюдо, которое любят все возрастные группы как закуску на вечеринках." },
@@ -450,7 +450,7 @@ const siteContent = {
     popularDishes: {
       label: "menu",
       title: "Popular Dishes",
-      description: "There is a game between the waiters in restaurant to see who serves the food to each table fastest. That led to attempting the Guinness Record.",
+      description: "There is a game between the waiters in restaurant to see who serves the food to <br> each table fastest. That led to attempting the Guinness Record.",
       seeAll: "See all dishes",
       items: [
         { name: "Chicken Manjoori", price: "$15", description: "Dish relished by all age groups as a starter dish at parties." },

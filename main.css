@@ -16,6 +16,112 @@
   box-sizing: border-box;
 }
 
+p {
+  color: #555;
+  letter-spacing: 0.01em;
+  margin-bottom: 10px;
+  font-family:
+    Josefin Sans,
+    sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 45px;
+  color: var(--bg);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family:
+    Cormorant Infant,
+    sans-serif;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+h4 {
+  color: var(--bg);
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-family:
+    Cormorant Infant,
+    sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  display: inline-block;
+}
+
+.section_subtitle {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  padding-top: 5px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.subtitle_wrap {
+  border-top: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
+  display: inline-block;
+}
+
+.transparent_button {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  text-align: center;
+  background-color: #0000;
+  padding: 18px 55px;
+  font-family:
+    Josefin Sans,
+    sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.5;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+  cursor: pointer;
+}
+
+.transparent_button:hover {
+  background-color: var(--accent);
+  color: var(--bg);
+}
+
+.button {
+  border: 2px solid var(--accent);
+  background-color: var(--accent);
+  color: var(--bg);
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: 18px 55px;
+  font-family:
+    Josefin Sans,
+    sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.5;
+  transition:
+    color 0.2s,
+    background-color 0.2s;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: var(--accent);
+}
+
 body {
   font-family: "Josefin Sans", sans-serif;
   overflow-x: hidden;
@@ -437,25 +543,32 @@ header nav .icons_lang a {
 .menu .category_wrap .menu_item .menu_name_wrap .menu_item_title {
   gap: 10px;
   display: flex;
-  width: max-content;
   flex-direction: column;
+  width: 100%;
 }
 
 .menu .category_wrap .menu_item .menu_name_wrap .menu_item_title h4 {
+  width: max-content;
   font-size: 30px;
   color: var(--bg);
   font-family: "Cormorant Infant", sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .menu .category_wrap .menu_item .menu_name_wrap .menu_item_title p {
+  width: 100%;
   font-size: 20px;
   color: #555;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .menu .category_wrap .menu_item .menu_price_divider {
-  width: 100%;
-  height: 50px;
-  margin: 0 10px;
+  flex: 1 1 auto;
+  align-self: flex-end;
+  height: auto;
+  margin: 0 10px 4px;
   border-bottom: 2px dashed #aaa;
 }
 
@@ -499,6 +612,7 @@ header nav .icons_lang a {
 .testimonials_content .testimonials_title .testimonial_title_wrapper h3 {
   margin: 10px 0 8px;
   text-transform: capitalize;
+  color: #fff;
   font-size: 40px;
   font-family: "Cormorant Infant", sans-serif;
 }
@@ -508,6 +622,7 @@ header nav .icons_lang a {
   margin-bottom: 10px;
   line-height: 1.5;
   letter-spacing: 0.01em;
+  color: #fff;
 }
 
 .swiper_box {
@@ -577,6 +692,7 @@ header nav .icons_lang a {
   font-size: 30px;
   font-weight: 700;
   line-height: 1.4;
+  color: #fff;
 }
 
 .testimonials_cover .testimonial_card .ts_profile .name_wrapper p {
@@ -651,7 +767,6 @@ header nav .icons_lang a {
 }
 
 .offers_content .offers_title_wrap {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -691,6 +806,7 @@ header nav .icons_lang a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 30px;
+  margin-top: 20px;
 }
 
 .offers_poster {
@@ -714,17 +830,213 @@ header nav .icons_lang a {
 }
 
 .offers_poster .data_wrapper {
-  width: 100%;
+  width: 60%;
 }
 
 .offers_poster .data_wrapper .only_rate {
-  
+  min-width: 140px;
+  margin: 10px 10px 30px 0;
+  padding: 25px 25px 15px 30px;
+  display: inline-block;
+  transform: rotate(-14deg);
+}
+
+.offers_poster .data_wrapper .only_rate p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 0.7;
+  letter-spacing: 0.01em;
+  color: var(--bg);
+  font-family: "Josefin sans", sans-serif;
+}
+
+.offers_poster .data_wrapper .only_rate h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  font-size: 60px;
+  line-height: 1.1;
+  font-weight: 700;
+  font-family:
+    Cormorant Infant,
+    sans-serif;
+}
+
+.offers_poster .data_wrapper .rate_white {
+  background-image: url("https://cdn.prod.website-files.com/622856f73bdd0f82f7741cb2/62301d273087db6f344caaa7_offer-bg-1.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.offers_poster .data_wrapper .rate_black {
+  background-image: url("https://cdn.prod.website-files.com/622856f73bdd0f82f7741cb2/6230226f3dfe38bbe2ce6745_offer-bg-2.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+.offers_poster .data_wrapper .rate_black p,
+.offers_poster .data_wrapper .rate_black h3 {
+  color: #fff;
+}
+
+.offers_poster .data_wrapper .rate_white {
+  color: var(--bg);
+}
+
+.data_wrapper .offer_going {
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  padding-top: 5px;
+  font-family:
+    Josefin Sans,
+    sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  display: inline-block;
+  line-height: 1.5;
+  color: var(--bg);
+  border-block: 1px solid var(--bg);
+}
+
+.data_wrapper .offer_name {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 40px;
+  font-family:
+    Cormorant Infant,
+    sans-serif;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.data_wrapper .offer_description {
+  letter-spacing: 0.01em;
+  margin-bottom: 10px;
+  color: #555;
+  font-family:
+    Josefin Sans,
+    sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .offers_poster .image_wrapper img {
   max-width: 100%;
   display: inline-block;
   vertical-align: middle;
+}
+
+/* -------------------------- */
+/* ----- POPULAR DISHES ----- */
+/* -------------------------- */
+
+.popular_dishes {
+  width: 100%;
+  margin-block: 60px 140px;
+}
+
+.popular_dishes .popular_dish_title_wrap {
+  text-align: center;
+}
+
+.popular_dish_content .popular_dish_grid {
+  margin-block: 30px 20px;
+}
+
+.popular_dish_content .popular_dish_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+}
+
+.popular_dish_content .popular_dish_grid .popular_dish_image {
+  width: 100%;
+}
+
+.popular_dish_item {
+  margin-bottom: 40px;
+}
+
+.popular_dish_item .popular_dish_contents .popular_dish_price_wrap {
+  border-bottom: 1px solid #dcdcdc;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.popular_dish_item
+  .popular_dish_contents
+  .popular_dish_price_wrap
+  .popular_dish_name {
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.popular_dish_item
+  .popular_dish_contents
+  .popular_dish_price_wrap
+  .popular_dish_price {
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.popular_dish_content .dish_button_wrap {
+  text-align: center;
+}
+
+/* -------------------------- */
+/* ---- SERVICE SECTION ----- */
+/* -------------------------- */
+
+.service_section {
+  width: 100%;
+  display: block;
+  padding-block: 140px;
+  background-color: var(--bg);
+}
+
+.service_section .service_content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+}
+
+.service_section .service_content .service_title_wrap {
+  padding-right: 60px;
+}
+
+.service_section .service_content .service_title_wrap p,
+.service_section .service_content .service_title_wrap h3 {
+  color: #fff;
+}
+
+.service_section .service_content .service_item {
+  text-align: center;
+  border: 20px solid #323841;
+  padding: 45px 30px 30px;
+}
+
+.service_section .service_content .service_item h4 {
+  color: #fff;
+  font-size: 25px;
+}
+
+/* -------------------------- */
+/* ------ BLOG SECTION ------ */
+/* -------------------------- */  
+
+.blog_section{
+  width: 100%;
+  padding-block: 140px 100px;
 }
 
 /* Animations */
