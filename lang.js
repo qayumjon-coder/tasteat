@@ -126,7 +126,7 @@ const siteContent = {
     blog: {
       label: "Blog",
       title: "Yangiliklarni birinchi bo'lib o'qing",
-      description: "Bizning taomlarimiz, takliflarimiz, tadbirlarimiz va kelajakdagi rejalarimiz haqidagi eng so'nggi voqealarni shu yerda o'rganing.",
+      description: "Bizning taomlarimiz, takliflarimiz, tadbirlarimiz va kelajakdagi rejalarimiz <br> haqidagi eng so'nggi voqealarni shu yerda o'rganing.",
       viewMore: "Ko'proq ko'rish",
       posts: [
         {
@@ -299,7 +299,7 @@ const siteContent = {
     blog: {
       label: "Блог",
       title: "Читайте новости первыми",
-      description: "Узнайте последние новости о наших блюдах, акциях, мероприятиях и планах на будущее здесь.",
+      description: "Узнайте последние новости о наших блюдах, акциях,<br> мероприятиях и планах на будущее здесь.",
       viewMore: "Читать далее",
       posts: [
         {
@@ -472,7 +472,7 @@ const siteContent = {
     blog: {
       label: "Blog",
       title: "Be First Who Read News",
-      description: "Explore the latest stories about our dishes, offers, events and future plans here.",
+      description: "Explore the latest stories about our dishes, offers,<br> events and future plans here.",
       viewMore: "View More",
       posts: [
         {
