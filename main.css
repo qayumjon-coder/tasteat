@@ -136,7 +136,7 @@ img {
   transition:
     background-color 0.2s,
     color 0.2s;
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .submit_button:hover {
@@ -173,7 +173,7 @@ header {
 .header_top_wrap {
   width: 100%;
   display: flex;
-  height: 188px;
+  height: auto;
   margin: 50px 0;
   align-items: center;
   justify-content: space-between;
@@ -266,34 +266,60 @@ header nav .icons_lang a {
   text-decoration: none;
 }
 
-.lang_btn{
-  width: 100px;
+.lang_btn_wrapper {
+  width: 80px;
+  height: 35px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.lang_btn {
+  position: absolute;
+  width: 80px;
+  height: auto;
   background: #fff;
   display: flex;
-  padding: 5px;
-  border-radius: 3px;
+  border-radius: 5px;
+  overflow: hidden;
+  max-height: 35px;
+}
+.down {
+  overflow: unset;
+  height: 100%;
+  border-radius: 5px;
+  max-height: 100px;
 }
 
-.lang_btns{
+.lang_btns {
   width: 100%;
+  height: 100%;
   display: flex;
+  padding: 5px;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #fff;
 }
 
-.lang_btns button{
+.lang_btns button {
   display: flex;
   align-items: center;
   gap: 5px;
   width: 100%;
   text-align: left;
-  font-family: "josefin sans" , sans-serif;
+  font-family: "josefin sans", sans-serif;
   font-size: 18px;
   background: #fff;
   border: none;
+  padding: 3px;
+  border-radius: 2px;
 }
 
-.lang_btns button img{
+.lang_btns button:hover {
+  background-color: #f1f1f1;
+  box-shadow: 0 0 6px #0000001f;
+}
+
+.lang_btns button img {
   width: 20px;
   border-radius: 6px;
 }
@@ -1259,7 +1285,6 @@ header nav .icons_lang a {
 }
 
 .input_field {
-  color: var(--white);
   background-color: #0000;
   border: 1px solid #858585;
   min-height: 70px;
@@ -1432,10 +1457,10 @@ footer
   .footer_content
   .footer_main_block
   .footer_subscribe_widget
-  .subscribe_form_input:focus{
-    border-color: #3898ec;
-    outline: 0;
-  }
+  .subscribe_form_input:focus {
+  border-color: #3898ec;
+  outline: 0;
+}
 
 footer
   .footer_content
@@ -1462,6 +1487,7 @@ footer .copyright_block {
 footer .copyright_block .copyright_content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 footer .copyright_block .copyright_content p {
@@ -1481,6 +1507,187 @@ footer .copyright_block .copyright_content .footer_page_link a {
 .copyright_link {
   color: var(--accent);
   text-decoration: none;
+}
+
+/* Media queries */
+
+@media (max-width: 1280px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .hero_data h1 {
+    font-size: 90px;
+  }
+
+  .reservation_section .reservation_content {
+    padding: 80px;
+  }
+
+  .reservation_section .reservation_content .book_table_form .form_input_wrap {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .input_field.half_width {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .input_field.quarter_width {
+    width: 100%;
+  }
+
+  .service_section .service_content {
+    grid-template-columns: 2fr 1fr;
+    grid-row-gap: 30px;
+    grid-template-rows: auto;
+  }
+
+  .popular_dish_content .popular_dish_grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+    grid-template-rows: auto;
+  }
+
+  .offers_poster {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  /* .swiper_box {
+    overflow: hidden !important;
+  }
+
+  .testimonials_content
+    .testimonials_comments
+    .testimonials_cover
+    .testimonial_card {
+    width: 100% !important;
+  } */
+}
+
+/* ============================= */
+/* SWIPER / TESTIMONIALS — responsive */
+/* ============================= */
+
+.swiper_box {
+  overflow: hidden !important;
+}
+
+.testimonials_content
+  .testimonials_comments
+  .testimonials_cover
+  .testimonial_card {
+  width: 90% !important;
+  height: auto;
+  min-height: 380px;
+  padding: 30px;
+}
+
+.swiper-pagination {
+  margin-top: 20px;
+  position: static !important;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet:last-child {
+  display: block;
+}
+
+.swiper-pagination-bullet {
+  width: 20px !important;
+  height: 20px !important;
+  bottom: 5px;
+  background-color: #fff6 !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 20px !important;
+  height: 20px !important;
+  background-color: #fff !important;
+}
+
+@media (min-width: 480px) {
+  .testimonials_content
+    .testimonials_comments
+    .testimonials_cover
+    .testimonial_card {
+    width: 75% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .testimonials_content
+    .testimonials_comments
+    .testimonials_cover
+    .testimonial_card {
+    width: 60% !important;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .header_top_wrap{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero_data{
+    text-align: center;
+    width: 100%;
+    margin-top: 160px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .hero_content{
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .hero_data .titleandparagraf h1{
+    font-size: 70px;
+  }
+
+  .details_content{
+    flex-direction: column;
+  }
+
+  .story_content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .story_content .image_content img{
+    width: 100%;
+  }
+
+  .details_content{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .testimonials_content
+    .testimonials_comments
+    .testimonials_cover
+    .testimonial_card {
+    width: 50% !important;
+  }
+
+  .swiper-pagination {
+    position: relative !important;
+  }
 }
 
 /* Animations */

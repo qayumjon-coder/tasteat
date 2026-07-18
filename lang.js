@@ -15,7 +15,7 @@ const siteContent = {
       call: "Chaqiruv - 123 456 789"
     },
     hero: {
-      title: "Restoranimizga xush kelibsiz",
+      title: "Restoranimizga <br> xush kelibsiz",
       description: "Odamlar, taom va qulay joylashuv — do'stlar va oila birga yig'ilib, ajoyib vaqt o'tkazishi uchun mukammal joy yaratadi.",
       button: "Menyuni ko'rish"
     },
@@ -51,18 +51,18 @@ const siteContent = {
         dessert: "Desert"
       },
       items: [
-        {image: "images/menu/Starters/6229c84a72e00315336144d5_menu-item-image-1.jpg", category: "starters", name: "Erkidagi xom morskoy grebeshok", description: "Grebeshokni ustritsalar uchun ishlatiladigan usulda tozalang", price: "$40" },
-        {image: "images/menu/Starters/6229d373d7d3fa5f722bdd40_menu-item-image-2.jpg", category: "starters", name: "Bahor ruleti", description: "Issiq tovaga yog' qo'shing, oq piyoz bilan", price: "$20" },
-        {image: "images/menu/Starters/6229d3823596cc4d67f4acc5_menu-item-image-3.jpg", category: "starters", name: "Frantsuz piyoz shorva", description: "Bug'doy uni, olma sirkasi, non", price: "$25" },
-        {image: "images/menu/Starters/6229d38b50dde73126097b56_menu-item-image-4.jpg", category: "starters", name: "Pomidorli bruskketta", description: "Non, zaytun moyi, sarimsoq, qora murch", price: "$30" },
-        
-        {image: "images/menu/MainDish/6229d396199c0032870b33e8_menu-item-image-5.jpg", category: "mains", name: "Ukrop sousli grilyangan losos", description: "Jigarrang shakar, losos filesi, Dijon gorchitsasi", price: "$40" },
-        {image: "images/menu/MainDish/6229d39f50cee31a1d4046b4_menu-item-image-6.jpg", category: "mains", name: "Sabzavotli qovurilgan mol go'shti", description: "Loviya, entrekot, zaytun moyi, mol go'shti", price: "$20" },
-        {image: "images/menu/MainDish/6229d3a950dde70c18097cc0_menu-item-image-7.jpg", category: "mains", name: "Marrakesh vegetarian karri", description: "Shirin kartoshka, baqlajon, no'xat", price: "$25" },
-        {image: "images/menu/MainDish/6229d3b450cee3aea6404866_menu-item-image-8.jpg", category: "mains", name: "Achchiq vegan kartoshka karri", description: "Kokos suti, loviya, kartoshka, karri kukuni", price: "$35" },
-        
-        {image: "images/menu/Desserts/IMAGE (18).png", category: "desserts", name: "Kremli olma pirogi", description: "Qaymoq krem, tuxum oqi, dolchin", price: "$15" },
-        {image: "images/menu/Desserts/IMAGE (19).png", category: "desserts", name: "Limonli meringue pirogi", description: "Muzlatilgan pirog xamiri, meringue, limon", price: "$30" }
+        { image: "images/menu/Starters/6229c84a72e00315336144d5_menu-item-image-1.jpg", category: "starters", name: "Erkidagi xom morskoy grebeshok", description: "Grebeshokni ustritsalar uchun ishlatiladigan usulda tozalang", price: "$40" },
+        { image: "images/menu/Starters/6229d373d7d3fa5f722bdd40_menu-item-image-2.jpg", category: "starters", name: "Bahor ruleti", description: "Issiq tovaga yog' qo'shing, oq piyoz bilan", price: "$20" },
+        { image: "images/menu/Starters/6229d3823596cc4d67f4acc5_menu-item-image-3.jpg", category: "starters", name: "Frantsuz piyoz shorva", description: "Bug'doy uni, olma sirkasi, non", price: "$25" },
+        { image: "images/menu/Starters/6229d38b50dde73126097b56_menu-item-image-4.jpg", category: "starters", name: "Pomidorli bruskketta", description: "Non, zaytun moyi, sarimsoq, qora murch", price: "$30" },
+
+        { image: "images/menu/MainDish/6229d396199c0032870b33e8_menu-item-image-5.jpg", category: "mains", name: "Ukrop sousli grilyangan losos", description: "Jigarrang shakar, losos filesi, Dijon gorchitsasi", price: "$40" },
+        { image: "images/menu/MainDish/6229d39f50cee31a1d4046b4_menu-item-image-6.jpg", category: "mains", name: "Sabzavotli qovurilgan mol go'shti", description: "Loviya, entrekot, zaytun moyi, mol go'shti", price: "$20" },
+        { image: "images/menu/MainDish/6229d3a950dde70c18097cc0_menu-item-image-7.jpg", category: "mains", name: "Marrakesh vegetarian karri", description: "Shirin kartoshka, baqlajon, no'xat", price: "$25" },
+        { image: "images/menu/MainDish/6229d3b450cee3aea6404866_menu-item-image-8.jpg", category: "mains", name: "Achchiq vegan kartoshka karri", description: "Kokos suti, loviya, kartoshka, karri kukuni", price: "$35" },
+
+        { image: "images/menu/Desserts/IMAGE (18).png", category: "desserts", name: "Kremli olma pirogi", description: "Qaymoq krem, tuxum oqi, dolchin", price: "$15" },
+        { image: "images/menu/Desserts/IMAGE (19).png", category: "desserts", name: "Limonli meringue pirogi", description: "Muzlatilgan pirog xamiri, meringue, limon", price: "$30" }
       ]
     },
     testimonials: {
@@ -97,8 +97,8 @@ const siteContent = {
       title: "Bizning maxsus takliflarimiz",
       description: "Oshpazlarimiz og'zingizda erib ketadigan taomlar tayyorlashadi, hatto eng talabchan ovqatlanuvchilarni ham <br> qoniqtiradi — hozir bu taomlar chegirmada.",
       items: [
-        { badge: "50% chegirma", name: "Tovuqli burger", description: "Mazali qo'shimchalar va ko'katlar bilan tovuqli burger.", price: "$10", only:"Faqat" },
-        { badge: "50% chegirma", name: "Tovuqli pitsa", description: "Turli xil ta'mlar aralashtirilgan pitsa.", price: "$9", only:"Faqat" }
+        { badge: "50% chegirma", name: "Tovuqli burger", description: "Mazali qo'shimchalar va ko'katlar bilan tovuqli burger.", price: "$10", only: "Faqat" },
+        { badge: "50% chegirma", name: "Tovuqli pitsa", description: "Turli xil ta'mlar aralashtirilgan pitsa.", price: "$9", only: "Faqat" }
       ]
     },
     popularDishes: {
@@ -158,7 +158,7 @@ const siteContent = {
         email: "josefin@mail.com"
       },
       newsletter: {
-        text: "Yangiliklar, xabarlar va aksiyalar haqida bilish uchun pochta ro'yxatimizga qo'shiling.",
+        text: "Yangiliklar, xabarlar va aksiyalar haqida bilish uchun <br> pochta ro'yxatimizga qo'shiling.",
         successMessage: "Rahmat! Arizangiz qabul qilindi!",
         errorMessage: "Kechirasiz! Formani yuborishda xatolik yuz berdi."
       },
@@ -168,7 +168,12 @@ const siteContent = {
         sat: "Shanba: 7:00 – 18:00",
         sun: "Yakshanba: 8:00 – 18:00"
       },
-      copyright: "© Mualliflik huquqi - TastEat"
+      copyright: `<p >© Mualliflik huquqi - TastEat | <a class="copyright_link" href="https://www.victorflow.com/">VictorFlow</a> tomonidan ishlab chiqilgan - <a class="copyright_link" href="https://webflow.com/">Webflow</a> Tomonidan qo'llab-quvvatlanadi </p>
+            <div class="footer_page_link">
+              <a class="copyright_link" href="">Styleguide</a>
+              <a class="copyright_link" href="">Licenses</a>
+              <a class="copyright_link" href="">Protected</a>
+            </div>`
     }
   },
 
@@ -188,7 +193,7 @@ const siteContent = {
       call: "Позвонить - 123 456 789"
     },
     hero: {
-      title: "Добро пожаловать в ресторан",
+      title: "Добро пожаловать <br> в ресторан",
       description: "Люди, еда и удобное расположение создают идеальное место, где друзья и семья могут собраться вместе и отлично провести время.",
       button: "Посмотреть меню"
     },
@@ -224,18 +229,18 @@ const siteContent = {
         dessert: "Десерт"
       },
       items: [
-        {image: "images/menu/Starters/6229c84a72e00315336144d5_menu-item-image-1.jpg", category: "starters", name: "Сырые морские гребешки из Эрки", description: "Очистите гребешок так же, как это делают для устриц", price: "$40" },
-        {image: "images/menu/Starters/6229d373d7d3fa5f722bdd40_menu-item-image-2.jpg", category: "starters", name: "Спринг-роллы", description: "Добавьте масло на горячую сковороду с белой частью зеленого лука", price: "$20" },
-        {image: "images/menu/Starters/6229d3823596cc4d67f4acc5_menu-item-image-3.jpg", category: "starters", name: "Французский луковый суп", description: "Пшеничная мука, яблочный уксус, хлеб", price: "$25" },
-        {image: "images/menu/Starters/6229d38b50dde73126097b56_menu-item-image-4.jpg", category: "starters", name: "Томатная брускетта", description: "Хлеб, оливковое масло, чеснок, черный перец", price: "$30" },
-        
-        {image: "images/menu/MainDish/6229d396199c0032870b33e8_menu-item-image-5.jpg", category: "mains", name: "Лосось на гриле с укропным соусом", description: "Коричневый сахар, филе лосося, дижонская горчица", price: "$40" },
-        {image: "images/menu/MainDish/6229d39f50cee31a1d4046b4_menu-item-image-6.jpg", category: "mains", name: "Ростбиф с овощами", description: "Стручковая фасоль, рибай, оливковое масло, говядина", price: "$20" },
-        {image: "images/menu/MainDish/6229d3a950dde70c18097cc0_menu-item-image-7.jpg", category: "mains", name: "Марракешское вегетарианское карри", description: "Сладкий картофель, баклажан, нут", price: "$25" },
-        {image: "images/menu/MainDish/6229d3b450cee3aea6404866_menu-item-image-8.jpg", category: "mains", name: "Острое веганское картофельное карри", description: "Кокосовое молоко, фасоль, картофель, порошок карри", price: "$35" },
-        
-        {image: "images/menu/Desserts/IMAGE (18).png", category: "desserts", name: "Яблочный пирог со сливками", description: "Взбитые сливки, яичный белок, корица", price: "$15" },
-        {image: "images/menu/Desserts/IMAGE (19).png", category: "desserts", name: "Лимонный пирог с меренгой", description: "Замороженная основа для пирога, меренга, лимон", price: "$30" }
+        { image: "images/menu/Starters/6229c84a72e00315336144d5_menu-item-image-1.jpg", category: "starters", name: "Сырые морские гребешки из Эрки", description: "Очистите гребешок так же, как это делают для устриц", price: "$40" },
+        { image: "images/menu/Starters/6229d373d7d3fa5f722bdd40_menu-item-image-2.jpg", category: "starters", name: "Спринг-роллы", description: "Добавьте масло на горячую сковороду с белой частью зеленого лука", price: "$20" },
+        { image: "images/menu/Starters/6229d3823596cc4d67f4acc5_menu-item-image-3.jpg", category: "starters", name: "Французский луковый суп", description: "Пшеничная мука, яблочный уксус, хлеб", price: "$25" },
+        { image: "images/menu/Starters/6229d38b50dde73126097b56_menu-item-image-4.jpg", category: "starters", name: "Томатная брускетта", description: "Хлеб, оливковое масло, чеснок, черный перец", price: "$30" },
+
+        { image: "images/menu/MainDish/6229d396199c0032870b33e8_menu-item-image-5.jpg", category: "mains", name: "Лосось на гриле с укропным соусом", description: "Коричневый сахар, филе лосося, дижонская горчица", price: "$40" },
+        { image: "images/menu/MainDish/6229d39f50cee31a1d4046b4_menu-item-image-6.jpg", category: "mains", name: "Ростбиф с овощами", description: "Стручковая фасоль, рибай, оливковое масло, говядина", price: "$20" },
+        { image: "images/menu/MainDish/6229d3a950dde70c18097cc0_menu-item-image-7.jpg", category: "mains", name: "Марракешское вегетарианское карри", description: "Сладкий картофель, баклажан, нут", price: "$25" },
+        { image: "images/menu/MainDish/6229d3b450cee3aea6404866_menu-item-image-8.jpg", category: "mains", name: "Острое веганское картофельное карри", description: "Кокосовое молоко, фасоль, картофель, порошок карри", price: "$35" },
+
+        { image: "images/menu/Desserts/IMAGE (18).png", category: "desserts", name: "Яблочный пирог со сливками", description: "Взбитые сливки, яичный белок, корица", price: "$15" },
+        { image: "images/menu/Desserts/IMAGE (19).png", category: "desserts", name: "Лимонный пирог с меренгой", description: "Замороженная основа для пирога, меренга, лимон", price: "$30" }
       ]
     },
     testimonials: {
@@ -270,8 +275,8 @@ const siteContent = {
       title: "Наши блюда со скидкой",
       description: "Наши повара создают тающие во рту блюда, которые удовлетворят даже самых привередливых едоков — сейчас <br> эти блюда участвуют в акции.",
       items: [
-        { badge: "Скидка 50%", name: "Куриный бургер", description: "Куриный бургер с вкусными добавками и зеленью.", price: "$10", only:"Только" },
-        { badge: "Скидка 50%", name: "Куриная пицца", description: "Пицца с разнообразными вкусами, смешанными вместе.", price: "$9", only:"Только" }
+        { badge: "Скидка 50%", name: "Куриный бургер", description: "Куриный бургер с вкусными добавками и зеленью.", price: "$10", only: "Только" },
+        { badge: "Скидка 50%", name: "Куриная пицца", description: "Пицца с разнообразными вкусами, смешанными вместе.", price: "$9", only: "Только" }
       ]
     },
     popularDishes: {
@@ -331,7 +336,7 @@ const siteContent = {
         email: "josefin@mail.com"
       },
       newsletter: {
-        text: "Присоединяйтесь к нашей рассылке, чтобы получать новости и специальные предложения.",
+        text: "Присоединяйтесь к нашей рассылке, чтобы получать <br> новости и специальные предложения.",
         successMessage: "Спасибо! Ваша заявка получена!",
         errorMessage: "Упс! Что-то пошло не так при отправке формы."
       },
@@ -341,7 +346,13 @@ const siteContent = {
         sat: "Сб: 7:00 – 18:00",
         sun: "Вс: 8:00 – 18:00"
       },
-      copyright: "© Авторские права - TastEat"
+      copyright: `<p> © Авторские права принадлежат TastEat | Дизайн: <a class="copyright_link" href="https://www.victorflow.com/">VictorFlow</a> - Питаться от <a class="copyright_link" href="https://webflow.com/">Webflow</a></p>
+            <div class="footer_page_link">
+              <a class="copyright_link" href="">Styleguide</a>
+              <a class="copyright_link" href="">Licenses</a>
+              <a class="copyright_link" href="">Protected</a>
+              <a class="copyright_link" href="">Not Found</a>
+            </div>`
     }
   },
 
@@ -361,7 +372,7 @@ const siteContent = {
       call: "Call - 123 456 789"
     },
     hero: {
-      title: "Welcome to Restaurant",
+      title: "Welcome to <br> Restaurant",
       description: "The people, food and the prime locations make the perfect place good friends & family to come together and have great time.",
       button: "View Menu"
     },
@@ -397,18 +408,18 @@ const siteContent = {
         dessert: "Dessert"
       },
       items: [
-        {image: "images/menu/Starters/6229c84a72e00315336144d5_menu-item-image-1.jpg", category: "starters", name: "Raw Scallops from Erquy", description: "Shuck the scallop to that used for oysters", price: "$40" },
-        {image: "images/menu/Starters/6229d373d7d3fa5f722bdd40_menu-item-image-2.jpg", category: "starters", name: "Spring Roll", description: "Add oil to a hot pan spring onion whites", price: "$20" },
-        {image: "images/menu/Starters/6229d3823596cc4d67f4acc5_menu-item-image-3.jpg", category: "starters", name: "French Onion Soup", description: "Wheat flour, apple cider vinegar, bread", price: "$25" },
-        {image: "images/menu/Starters/6229d38b50dde73126097b56_menu-item-image-4.jpg", category: "starters", name: "Tomato Bruschetta", description: "Bread, olive oil, garlic, black pepper", price: "$30" },
-        
-        {image: "images/menu/MainDish/6229d396199c0032870b33e8_menu-item-image-5.jpg", category: "mains", name: "Grilled Salmon with Dill Sauce", description: "Brown sugar, salmon fillet, Dijon mustard", price: "$40" },
-        {image: "images/menu/MainDish/6229d39f50cee31a1d4046b4_menu-item-image-6.jpg", category: "mains", name: "Roast Beef with Vegetable", description: "Green beans, rib eye, olive oil, beef", price: "$20" },
-        {image: "images/menu/MainDish/6229d3a950dde70c18097cc0_menu-item-image-7.jpg", category: "mains", name: "Marrkesh Vegetetarian Curruy", description: "Sweet potato, eggplant, garbanzo bean", price: "$25" },
-        {image: "images/menu/MainDish/6229d3b450cee3aea6404866_menu-item-image-8.jpg", category: "mains", name: "Spicy Vegan Potato Curry", description: "Coconut milk, beans, potatoes, curry powder", price: "$35" },
-        
-        {image: "images/menu/Desserts/IMAGE (18).png", category: "desserts", name: "Apple Pie with Cream", description: "Whipping cream, egg white, cinnamon", price: "$15" },
-        {image: "images/menu/Desserts/IMAGE (19).png", category: "desserts", name: "Lemon Meringue Pie", description: "Frozen pie crust, meringue, lemon", price: "$30" }
+        { image: "images/menu/Starters/6229c84a72e00315336144d5_menu-item-image-1.jpg", category: "starters", name: "Raw Scallops from Erquy", description: "Shuck the scallop to that used for oysters", price: "$40" },
+        { image: "images/menu/Starters/6229d373d7d3fa5f722bdd40_menu-item-image-2.jpg", category: "starters", name: "Spring Roll", description: "Add oil to a hot pan spring onion whites", price: "$20" },
+        { image: "images/menu/Starters/6229d3823596cc4d67f4acc5_menu-item-image-3.jpg", category: "starters", name: "French Onion Soup", description: "Wheat flour, apple cider vinegar, bread", price: "$25" },
+        { image: "images/menu/Starters/6229d38b50dde73126097b56_menu-item-image-4.jpg", category: "starters", name: "Tomato Bruschetta", description: "Bread, olive oil, garlic, black pepper", price: "$30" },
+
+        { image: "images/menu/MainDish/6229d396199c0032870b33e8_menu-item-image-5.jpg", category: "mains", name: "Grilled Salmon with Dill Sauce", description: "Brown sugar, salmon fillet, Dijon mustard", price: "$40" },
+        { image: "images/menu/MainDish/6229d39f50cee31a1d4046b4_menu-item-image-6.jpg", category: "mains", name: "Roast Beef with Vegetable", description: "Green beans, rib eye, olive oil, beef", price: "$20" },
+        { image: "images/menu/MainDish/6229d3a950dde70c18097cc0_menu-item-image-7.jpg", category: "mains", name: "Marrkesh Vegetetarian Curruy", description: "Sweet potato, eggplant, garbanzo bean", price: "$25" },
+        { image: "images/menu/MainDish/6229d3b450cee3aea6404866_menu-item-image-8.jpg", category: "mains", name: "Spicy Vegan Potato Curry", description: "Coconut milk, beans, potatoes, curry powder", price: "$35" },
+
+        { image: "images/menu/Desserts/IMAGE (18).png", category: "desserts", name: "Apple Pie with Cream", description: "Whipping cream, egg white, cinnamon", price: "$15" },
+        { image: "images/menu/Desserts/IMAGE (19).png", category: "desserts", name: "Lemon Meringue Pie", description: "Frozen pie crust, meringue, lemon", price: "$30" }
       ]
     },
     testimonials: {
@@ -443,8 +454,8 @@ const siteContent = {
       title: "Our Offer dishes",
       description: "Our chefs create melt-in-your-mouth dishes that'll satiate even the fussiest eaters now <br> the dishes are in offers use it based on hunger.",
       items: [
-        { badge: "50% Offer Going", name: "Chicken Burger", description: "Chicken burger with the tasty toppings and leaves.", price: "$10", only:"Only" },
-        { badge: "50% Offer Going", name: "Chicken Pizza", description: "Pizza with multiple flavor and the toping are mixed.", price: "$9", only:"Only" }
+        { badge: "50% Offer Going", name: "Chicken Burger", description: "Chicken burger with the tasty toppings and leaves.", price: "$10", only: "Only" },
+        { badge: "50% Offer Going", name: "Chicken Pizza", description: "Pizza with multiple flavor and the toping are mixed.", price: "$9", only: "Only" }
       ]
     },
     popularDishes: {
@@ -504,19 +515,25 @@ const siteContent = {
         email: "josefin@mail.com"
       },
       newsletter: {
-        text: "Join our mailing list for updates, Get news & offers events.",
+        text: "Join our mailing list for updates,<br> Get news & offers events.",
         successMessage: "Thank you! Your submission has been received!",
-        errorMessage: "Oops! Something went wrong while submitting the form."
-      },
-      workingHours: {
-        title: "Working Hours",
-        monFri: "Mon – Fri: 7.00am – 6.00pm",
-        sat: "Sat: 7.00am – 6.00pm",
-        sun: "Sun: 8.00am – 6.00pm"
-      },
-      copyright: "© Copyright - TastEat"
-    }
+      errorMessage: "Oops! Something went wrong while submitting the form."
+    },
+    workingHours: {
+      title: "Working Hours",
+      monFri: "<span>Mon – Fri:</span> 7.00am – 6.00pm",
+      sat: "<span>Sat:</span> 7.00am – 6.00pm",
+      sun: "<span>Sun:</span> 8.00am – 6.00pm"
+    },
+    copyright: `<p >© Copyright - TastEat | Designed by <a class="copyright_link" href="https://www.victorflow.com/">VictorFlow</a> - Powered by <a class="copyright_link" href="https://webflow.com/">Webflow</a></p>
+            <div class="footer_page_link">
+              <a class="copyright_link" href="">Styleguide</a>
+              <a class="copyright_link" href="">Licenses</a>
+              <a class="copyright_link" href="">Protected</a>
+              <a class="copyright_link" href="">Not Found</a>
+            </div>`
   }
+}
 };
 
 // Eksport qilish

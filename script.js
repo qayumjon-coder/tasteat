@@ -1,9 +1,5 @@
-
-const starters = document.querySelector(".starters");
-const mains = document.querySelector(".mains");
-const desserts = document.querySelector(".desserts");
-const menu = document.querySelector(".menu");
-
+const langBtns = document.querySelectorAll(".btn_lang");
+const langBtn = document.querySelector(".lang_btn");
 let currentlang = localStorage.getItem("lang") || "en";
 
 function renderMenu(category) {
@@ -49,6 +45,7 @@ function updatePageText() {
 
 function setLanguage(lang) {
     currentlang = lang;
+    document.documentElement.lang = lang;
 
     renderMenu("starters");
     renderMenu("mains");
@@ -56,12 +53,20 @@ function setLanguage(lang) {
 
     localStorage.setItem("lang", lang);
     updatePageText();
+
+    langBtns.forEach((btn) => {
+        if(btn.dataset.lang === lang){
+            btn.style.order = "1";
+        }else{
+            btn.style.order = "2";
+        }
+    })
 }
 
-const langBtn = document.querySelectorAll(".btn-lang");
-langBtn.forEach((btn) => {
+langBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
         setLanguage(btn.dataset.lang);
+        langBtn.classList.toggle("down");
     });
 });
 

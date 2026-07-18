@@ -71,21 +71,22 @@
               <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
               <a href="#"><i class="fa-brands fa-pinterest"></i></a>
 
-              <div class="lang_btn">
+              <div class="lang_btn_wrapper">
+                <div class="lang_btn">
                 <div class="lang_btns">
-                  <button class="btn-lang english" data-lang="en">
+                  <button class="btn_lang english" data-lang="en">
                     <img src="./images/lang/united-states.png" alt="en-US">En
                   </button>
 
-                  <button class="btn-lang uzbek" data-lang="uz"><img src="./images/lang/uzbekistan.png" alt="">Uz</button>
+                  <button class="btn_lang uzbek" data-lang="uz"><img src="./images/lang/uzbekistan.png" alt="">Uz</button>
 
-                  <button class="btn-lang russian" data-lang="ru">
+                  <button class="btn_lang russian" data-lang="ru">
                     <img src="./images/lang/russia.png" alt="">Ru
                   </button>
                 </div>
-
-                <i class="fa-solid fa-caret-down"></i>
               </div>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -181,7 +182,7 @@
           <div class="image_content">
             <img
               class="story_image"
-              src="/images/IMAGE (8).png"
+              src="./images/IMAGE (8).png"
               alt="story-image"
             />
           </div>
@@ -212,7 +213,7 @@
               <p data-i18n="aboutStory.signature">JOSEFINE</p>
               <img
                 class="sign"
-                src="/images/sign/Vector.png"
+                src="./images/sign/Vector.png"
                 alt="sign_image"
               />
             </div>
@@ -707,7 +708,7 @@
 
     <!-- Service section -->
 
-    <secion class="service_section">
+    <section class="service_section">
       <div class="container">
         <div class="service_content">
           <div class="service_title_wrap">
@@ -717,7 +718,7 @@
               </p>
             </div>
 
-            <h3 class="secion_title" data-i18n="services.title">
+            <h3 class="section_title" data-i18n="services.title">
               Our Great Services
             </h3>
 
@@ -753,7 +754,7 @@
           </div>
         </div>
       </div>
-    </secion>
+    </section>
 
     <!-- Blog section -->
 
@@ -942,7 +943,7 @@
         <div class="footer_content">
           <div class="footer_top_content">
             <div class="footer_link">
-              <a href="#" class="footer_top_link">#TheTastEat</a>
+              <a href="#" class="footer_top_link" data-i18n="footer.hashtag">#TheTastEat</a>
             </div>
             <div class="footer_logo">
               <a href="#" class="footer_logo_link">
@@ -964,18 +965,18 @@
           <div class="footer_main_block">
             <div class="address_widget">
               <div class="widget_title_wrap">
-                <h3 class="widget_title">Contact</h3>
+                <h3 class="widget_title" data-i18n="footer.contact.title">Contact</h3>
               </div>
 
               <div class="adress_content_wrap">
-                <p>5 Rue Dalou, 75015 Paris</p>
-                <a href="tel:123456789">+123 456 789</a>
-                <a href="mailto:josefin@mail.com">josefin@mail.com</a>
+                <p data-i18n="footer.contact.address">5 Rue Dalou, 75015 Paris</p>
+                <a href="tel:123456789" data-i18n="footer.contact.phone">+123 456 789</a>
+                <a href="mailto:josefin@mail.com" data-i18n="footer.contact.email">josefin@mail.com</a>
               </div>
             </div>
 
             <div class="footer_subscribe_widget">
-              <p>
+              <p data-i18n="footer.newsletter.text">
                 Join our mailing list for updates,<br />
                 Get news & offers events.
               </p>
@@ -1001,17 +1002,17 @@
 
             <div class="footer_working_hour">
               <div class="widget_title_wrap">
-                <h3 class="widget_title">Working Hours</h3>
+                <h3 class="widget_title" data-i18n="footer.workingHours.title">Working Hours</h3>
               </div>
 
               <div class="working_hour_wrap">
-                <p class="footer_working_time">
-                  <span class="working_days">Mon – Fri:</span> 7.00am – 6.00pm
+                <p class="footer_working_time" data-i18n="footer.workingHours.monFri">
+                  <span class="working_days" >Mon – Fri:</span> 7.00am – 6.00pm
                 </p>
-                <p class="footer_working_time">
+                <p class="footer_working_time" data-i18n="footer.workingHours.sat">
                   <span class="working_days">Sat:</span> 7.00am – 6.00pm
                 </p>
-                <p class="footer_working_time">
+                <p class="footer_working_time" data-i18n="footer.workingHours.sun">
                   <span class="working_days">Sun:</span> 8.00am – 6.00pm
                 </p>
               </div>
@@ -1022,7 +1023,7 @@
 
       <div class="copyright_block">
         <div class="container">
-          <div class="copyright_content">
+          <div class="copyright_content" data-i18n="footer.copyright">
             <p >© Copyright - TastEat | Designed by <a class="copyright_link" href="https://www.victorflow.com/">VictorFlow</a> - Powered by <a class="copyright_link" href="https://webflow.com/">Webflow</a></p>
             <div class="footer_page_link">
               <a class="copyright_link" href="">Styleguide</a>
@@ -1039,7 +1040,7 @@
     <script src="./lang.js"></script>
     <script src="swiper.js"></script>
     <script type="module" src="script.js"></script>
-     <link
+    <!--  <link
       rel="stylesheet"
       href="https://unpkg.com/lenis@1.3.23/dist/lenis.css"
     />
@@ -1053,6 +1054,6 @@
         naiveDimensions: true,
         stopInertiaOnNavigate: true,
       });
-    </script>
+    </script> -->
   </body>
 </html>
