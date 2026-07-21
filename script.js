@@ -2,6 +2,9 @@ const langBtns = document.querySelectorAll(".btn_lang");
 const langBtn = document.querySelector(".lang_btn");
 let currentlang = localStorage.getItem("lang") || "en";
 
+let navList = document.querySelector(".nav_list");
+const menuBtn = document.querySelector(".nav_menu_icon");
+
 function renderMenu(category) {
     const items = siteContent[currentlang].menuSection.items.filter(
         (item) => item.category === category,
@@ -68,6 +71,17 @@ langBtns.forEach((btn) => {
         setLanguage(btn.dataset.lang);
         langBtn.classList.toggle("down");
     });
+});
+
+menuBtn.addEventListener("click", () => {
+    navList.classList.toggle("extend");
+    if (navList.classList.contains("extend")) {
+        menuBtn.style.backgroundColor = "#e1b168";
+        menuBtn.style.color = "#fff";
+    }else{
+        menuBtn.style.backgroundColor = "#fff";
+        menuBtn.style.color = "#000";
+    }
 });
 
 document.addEventListener("DOMContentLoaded", () => {
