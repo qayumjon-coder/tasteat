@@ -87,3 +87,7 @@ menuBtn.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", () => {
     setLanguage(currentlang);
 });
+
+document.querySelectorAll('*').forEach(el => {
+  if (el.offsetWidth > document.documentElement.clientWidth) console.log(el)
+});

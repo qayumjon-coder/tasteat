@@ -15,7 +15,7 @@ const siteContent = {
       call: "Chaqiruv - 123 456 789"
     },
     hero: {
-      title: "Restoranimizga <br> xush kelibsiz",
+      title: "Restoranga xush kelibsiz",
       description: "Odamlar, taom va qulay joylashuv — do'stlar va oila birga yig'ilib, ajoyib vaqt o'tkazishi uchun mukammal joy yaratadi.",
       button: "Menyuni ko'rish"
     },
