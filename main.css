@@ -395,7 +395,7 @@ header nav .icons_lang a {
 }
 
 .hero_image {
-  width: 670px;
+  width: 50%;
   position: relative;
 }
 
@@ -403,9 +403,10 @@ header nav .icons_lang a {
   z-index: 2;
   width: 100%;
   position: relative;
-  border-bottom: none;
   border-radius: 626px 626px 0 0;
-  border: 30px solid var(--white-transparent);
+  border-left: 30px solid var(--white-transparent);
+  border-top: 30px solid var(--white-transparent);
+  border-right: 30px solid var(--white-transparent);
 }
 
 .hero_image .wheel_pattern {
@@ -856,6 +857,7 @@ header nav .icons_lang a {
 /* -------------------------- */
 
 .parallax_section {
+  width: 100%;
   background-image: url("./images/download.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
@@ -1544,7 +1546,7 @@ footer .copyright_block .copyright_content .footer_page_link a {
 
 /* Media queries */
 
-@media (max-width: 1052px) {
+@media (max-width: 1093px) {
   nav {
     position: relative;
   }
@@ -1590,6 +1592,10 @@ footer .copyright_block .copyright_content .footer_page_link a {
 
   .hero_data h1 {
     font-size: 90px;
+  }
+
+  .hero_image .wheel_pattern{
+    right: -50px;
   }
 
   .reservation_section .reservation_content {
@@ -1661,8 +1667,16 @@ footer .copyright_block .copyright_content .footer_page_link a {
     align-items: center;
   }
 
+  .hero_image{
+    width: 100%;
+  }
+
   .hero_image .hro_image {
     width: 100%;
+  }
+
+  .hero_image .wheel_pattern{
+    right: -50px;
   }
 
   .hero_data .titleandparagraf h1 {
@@ -1774,11 +1788,21 @@ footer .copyright_block .copyright_content .footer_page_link a {
   }
 
   .container {
-    padding: 0 30px;
+    padding: 0 20px;
   }
 
   .hero_image .wheel_pattern {
     display: none;
+  }
+
+  .hero_image .hro_image{
+    width: 100%;  
+    position: static;
+  }
+
+  .detail{
+    flex-direction: column;
+    align-items: start;
   }
 
   .menu .category_wrap .menu_item .menu_price_divider {
